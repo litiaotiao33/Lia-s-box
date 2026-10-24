@@ -28,7 +28,6 @@ export const copy = {
     stats: [
       ["3", "主要作品"],
       ["3", "实验项目"],
-      ["CUC · Brera", "教育背景"],
     ],
     filters: ["全部", "原创剧目", "概念项目", "实验项目"],
     credits: "主创",
@@ -87,7 +86,6 @@ export const copy = {
     stats: [
       ["3", "Main works"],
       ["3", "Experiments"],
-      ["CUC · Brera", "Education"],
     ],
     filters: ["All", "Original", "Concept", "Experiment"],
     credits: "Credits",
@@ -146,7 +144,6 @@ export const copy = {
     stats: [
       ["3", "Lavori principali"],
       ["3", "Esperimenti"],
-      ["CUC · Brera", "Formazione"],
     ],
     filters: ["Tutti", "Originale", "Concept", "Esperimenti"],
     credits: "Crediti",
