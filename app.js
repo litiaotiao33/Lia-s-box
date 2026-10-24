@@ -143,6 +143,7 @@ function contactView() {
       <h1>${c.contactTitle}</h1>
       <p class="lede">${c.contactBody}</p>
       <ul class="contact-list">
+        <li><span>微信 / WeChat</span><em>${c.contactWechat}</em></li>
         <li><span>Email</span><a href="mailto:${c.contactMail}">${c.contactMail}</a></li>
         <li><span>Instagram</span><a href="https://instagram.com/litiaotiao33" target="_blank" rel="noreferrer">${c.contactIns}</a></li>
         <li><span>WhatsApp</span><a href="https://wa.me/393936614947" target="_blank" rel="noreferrer">${c.contactWhats}</a></li>
