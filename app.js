@@ -88,7 +88,7 @@ function homeView() {
       <div class="about-hero">
         <p class="eyebrow">${c.hero.kicker}</p>
         <h1>${c.hero.title.replace("\n", "<br />")}</h1>
-        <p class="lede">${c.hero.lede}</p>
+        ${c.hero.lede ? `<p class="lede">${c.hero.lede}</p>` : ""}
       </div>
       <figure class="about-photo">
         <img src="./assets/lia-at-work.jpg" alt="${c.hero.photoAlt}" />

@@ -5,13 +5,9 @@ export const copy = {
     hero: {
       kicker: "舞台美术 · 空间设计",
       title: "李亚鑫\nLia",
-      lede: "专注于舞台美术与空间设计的创作者。现居米兰，可在意大利、北京及上海开展合作。",
+      lede: "",
       photoAlt: "李亚鑫在工作室制作模型",
-      bio: [
-        "本科毕业于中国传媒大学戏剧影视美术设计专业，硕士毕业于中国传媒大学戏剧专业（创作方向）；现就读于意大利布雷拉美术学院舞台美术设计（剧院）研究生。",
-        "她的创作以表现主义为重要方法：从剧本出发，拆解人物、叙事与主题结构，提炼具象意象背后的情感和观念，并将其转化为具有空间张力的抽象舞台语言。她擅长从整体空间关系出发，统筹舞台布局、视觉动线、材质、色彩与灯光氛围，构建兼具叙事性、功能性与现场感的空间体验。",
-        "同时，她具备从概念设计、方案深化到制作落地与现场执行的完整实践能力，能够协调不同专业团队，推进设计在实际场地与制作条件中的准确实现。",
-      ],
+      bio: ["表现主义、剧本拆解、意象转译"],
     },
     facts: [
       ["身份", "舞台美术 / 空间设计"],
@@ -68,13 +64,9 @@ export const copy = {
     hero: {
       kicker: "Scenic design · Spatial practice",
       title: "Li Yaxin\nLia",
-      lede: "A creator focused on stage design and spatial experience. Based in Milan, available for work in Italy, Beijing, and Shanghai.",
+      lede: "",
       photoAlt: "Li Yaxin building models in the studio",
-      bio: [
-        "She earned her BFA in Theatre, Film and Television Design and her MFA in Theatre (Creative Direction) at Communication University of China. She is now pursuing graduate studies in Scenic Design for Theatre at Accademia di Belle Arti di Brera in Milan.",
-        "Expressionism is central to her method: starting from the script, she unpacks character, narrative, and thematic structure, distills the emotions and ideas behind concrete images, and transforms them into an abstract stage language with spatial tension. Working from the whole spatial relationship, she coordinates layout, visual circulation, materials, color, and light to build spaces that are narrative, functional, and alive on site.",
-        "She works across the full process—from concept and development to fabrication and on-site execution—and can coordinate multidisciplinary teams so the design is realized accurately within real venues and production constraints.",
-      ],
+      bio: ["Expressionism, script analysis, image translation"],
     },
     facts: [
       ["Role", "Scenic / Spatial design"],
@@ -131,13 +123,9 @@ export const copy = {
     hero: {
       kicker: "Scenografia · Progettazione dello spazio",
       title: "Li Yaxin\nLia",
-      lede: "Creatrice dedicata alla scenografia e alla progettazione dello spazio. Vive a Milano; disponibile in Italia, Pechino e Shanghai.",
+      lede: "",
       photoAlt: "Li Yaxin al lavoro sui modelli in studio",
-      bio: [
-        "Ha conseguito la laurea in Design per teatro, cinema e televisione e il master in Teatro (indirizzo creativo) presso la Communication University of China. Ora studia Scenografia per il teatro all’Accademia di Belle Arti di Brera a Milano.",
-        "L’espressionismo è un metodo centrale nel suo lavoro: partendo dal testo, scompone personaggi, narrazione e struttura tematica, estrae emozioni e idee dietro le immagini concrete e le traduce in un linguaggio scenico astratto, carico di tensione spaziale. Partendo dalle relazioni complessive dello spazio, coordina layout, percorsi visivi, materiali, colore e luce per costruire esperienze narrative, funzionali e vive in scena.",
-        "Lavora sull’intero processo—dal concept e dallo sviluppo fino alla realizzazione e all’esecuzione in loco—e sa coordinare team di discipline diverse affinché il progetto si realizzi con precisione nelle condizioni reali di spazio e produzione.",
-      ],
+      bio: ["Espressionismo, analisi del testo, traduzione delle immagini"],
     },
     facts: [
       ["Ruolo", "Scenografia / Spazio"],
