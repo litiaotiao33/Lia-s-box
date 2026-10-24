@@ -8,6 +8,10 @@ const brand = document.querySelector(".brand");
 const state = {
   lang: localStorage.getItem("lia-lang") || "zh",
   filter: "all",
+  lastRoute: null,
+  /** Scroll Y to restore when leaving dashboard back to the page that opened it. */
+  returnScroll: null,
+  returnRoute: null,
 };
 
 function t() {
@@ -345,25 +349,65 @@ function detailView(id) {
   return simpleDetail(work);
 }
 
-function render() {
+function render({ preserveScroll = false } = {}) {
   const current = route();
+  const previous = state.lastRoute;
+  // Capture scroll before swapping DOM — still the outgoing page's position.
+  const outgoingY = window.scrollY || window.pageYOffset || 0;
+
+  if (
+    current.name === "dashboard" &&
+    previous &&
+    previous.name !== "dashboard" &&
+    previous.name !== "detail"
+  ) {
+    state.returnScroll = outgoingY;
+    state.returnRoute = previous.name;
+  }
+
+  const shouldRestore =
+    !preserveScroll &&
+    previous?.name === "dashboard" &&
+    (current.name === "home" || current.name === "contact") &&
+    state.returnRoute === current.name &&
+    typeof state.returnScroll === "number";
+
+  const restoreY = shouldRestore ? state.returnScroll : null;
+
   setNav();
   if (current.name === "dashboard") main.innerHTML = dashboardView();
   else if (current.name === "detail") main.innerHTML = detailView(current.id);
   else if (current.name === "contact") main.innerHTML = contactView();
   else main.innerHTML = homeView();
 
-  window.scrollTo({ top: 0, behavior: current.name === "home" ? "auto" : "smooth" });
+  if (restoreY != null) {
+    // Keep the entry point on the previous page (e.g. midway down 简介).
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: restoreY, behavior: "auto" });
+    });
+  } else if (!preserveScroll) {
+    window.scrollTo({ top: 0, behavior: previous ? "smooth" : "auto" });
+  }
+
+  state.lastRoute = { name: current.name, id: current.id || null };
 
   main.querySelectorAll("[data-filter]").forEach((btn) => {
     btn.addEventListener("click", () => {
       state.filter = btn.dataset.filter;
-      render();
+      render({ preserveScroll: true });
     });
   });
   bindStripNav();
 }
 
+function ensureAboutEntry() {
+  const hash = location.hash;
+  if (!hash || hash === "#" || hash === "#/") {
+    if (hash !== "#/") history.replaceState(null, "", `${location.pathname}${location.search}#/`);
+  }
+}
+
 langButtons.forEach((btn) => btn.addEventListener("click", () => setLang(btn.dataset.lang)));
-window.addEventListener("hashchange", render);
+window.addEventListener("hashchange", () => render());
+ensureAboutEntry();
 setLang(state.lang);
