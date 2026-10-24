@@ -24,7 +24,7 @@ export const copy = {
     contactWhats: "+39 393 661 4947",
     contactLoc: "米兰 · 北京 · 上海",
     dashTitle: "作品",
-    dashIntro: "欢迎进入Lia'box",
+    dashIntro: "欢迎进入Lia's box",
     stats: [
       ["3", "主要作品"],
       ["3", "实验项目"],
@@ -83,7 +83,7 @@ export const copy = {
     contactWhats: "+39 393 661 4947",
     contactLoc: "Milan · Beijing · Shanghai",
     dashTitle: "Work",
-    dashIntro: "Welcome to Lia'box",
+    dashIntro: "Welcome to Lia's box",
     stats: [
       ["3", "Main works"],
       ["3", "Experiments"],
@@ -142,7 +142,7 @@ export const copy = {
     contactWhats: "+39 393 661 4947",
     contactLoc: "Milano · Pechino · Shanghai",
     dashTitle: "Lavori",
-    dashIntro: "Benvenuti in Lia'box",
+    dashIntro: "Benvenuti in Lia's box",
     stats: [
       ["3", "Lavori principali"],
       ["3", "Esperimenti"],
