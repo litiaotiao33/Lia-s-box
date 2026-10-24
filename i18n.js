@@ -307,7 +307,7 @@ export const mainWorks = [
         labelKey: "colorDrafts",
         images: [
           {
-            src: "./assets/ward6/03-color-ward.jpg",
+            src: "./assets/ward6/06-color-exterior.jpg",
             caption: { zh: "色稿 · 第六病室", en: "Color · Ward No. 6", it: "Colore · Corsia n. 6" },
           },
           {
@@ -319,7 +319,7 @@ export const mainWorks = [
             caption: { zh: "色稿 · 医院内部", en: "Color · Hospital interior", it: "Colore · Interno ospedale" },
           },
           {
-            src: "./assets/ward6/06-color-exterior.jpg",
+            src: "./assets/ward6/03-color-ward.jpg",
             caption: { zh: "色稿 · 医院外部", en: "Color · Hospital exterior", it: "Colore · Esterno ospedale" },
           },
         ],
