@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lia's Stage Box</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip</a>
+    <header class="site-head" id="nav">
+      <a class="brand" href="#/" data-nav="home">Lia's Stage Box</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#/" data-nav="home" data-i18n="nav.about"></a>
+        <a href="#/dashboard" data-nav="dashboard" data-i18n="nav.dashboard"></a>
+        <a href="#/contact" data-nav="contact" data-i18n="nav.contact"></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="it">IT</button>
+      </div>
+    </header>
+
+    <main id="main"></main>
+    <script type="module" src="./app.js?v=20"></script>
+  </body>
+</html>
